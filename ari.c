@@ -8,7 +8,7 @@ string ari(string s) {
     float b = (float)nw/ns;
     int x = 4.71 * a + 0.5 * b - 21.43;
     switch(x+1) {
-      case 1:   return "Kindergarten;
+      case 1:   return "Kindergarten";
       case 2:   return "First/Second Grade";
       case 3:   return "Third Grade";
       case 4:   return "Fourth Grade";
