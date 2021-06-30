@@ -1,12 +1,14 @@
 #include <cs50.h>
+#include <string.h>
+
 string ari(string s) {
   int wc = 0; int sc = 0; int lc = 0;
   for(int i = 0; i < strlen(s); i++) {
     if(isalnum(s[i]))  lc++;
     else if(s[i] == ' ')  wc++;
     else if(s[i] == '.' || s[i] == '?' || s[i] == '!')  sc++;
-    float a = (float)nl/nw;
-    float b = (float)nw/ns;
+    float a = (float)lc/wc;
+    float b = (float)wc/sc;
     int x = 4.71 * a + 0.5 * b - 21.43;
     switch(x+1) {
       case 1:   return "Kindergarten";
