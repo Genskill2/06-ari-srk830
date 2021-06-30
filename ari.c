@@ -1,3 +1,4 @@
+#include <cs50.h>
 string ari(string s) {
   int wc = 0; int sc = 0; int lc = 0;
   for(int i = 0; i < strlen(s); i++) {
